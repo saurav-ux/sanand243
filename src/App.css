@@ -1,38 +1,309 @@
-.App {
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.position{
+    position: absolute;
+}
+
+
+/* Constom fonts */
+
+.align-items-center{
+   text-align: center;
+   margin-top: 3em;
+  
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+                                   /* navbar */
+#logo2{
+  width: 70%;
+  height: 40%;   
+}
+
+.navbar{
+ background-color: white;
+  box-shadow: 0px 3px 15px 0px rgb(224, 224, 224);   
+  z-index: -1;;
+     
+}
+
+.bor{
+  border-style: solid;
+  border-width: medium;
+  border-top-color: white;
+  border-right-color: white;
+  border-left-color: white;
+  border-bottom-color: white;
+  text-decoration: none;
+}
+.bor:hover{
+  border-style: solid;
+  border-width: medium;
+  transition: 0.6s;
+  border-top-color: white;
+  border-right-color: white;
+  border-left-color: white;
+  border-bottom-color: rgb(250, 120, 142);
+ 
+}
+.a:hover{
+  border-bottom-color:#F28273;
+}
+.b:hover{
+  border-bottom-color:#FB56C1;
+}
+.c:hover{
+  border-bottom-color:#F26A10;
+}
+.d:hover{
+  border-bottom-color:#F5CD45;
+}
+.e:hover{
+  border-bottom-color:#10B7AF;
+}
+.fas{
+
+  margin: 30.55px;
+
+font-size: 20px;
+color: black;
+}
+#p1{
+  margin: 20px;
+cursor: pointer;
+  font-size: 30px;
+  color: black;
+}
+#p1:hover{
+  color: rgb(250, 120, 142);
+  transition: 0.3s;
+}
+.fab{
+  margin: 20px;
+cursor: pointer;
+  font-size: 30px;
+  color: black;
+}
+.nav_side  input{
+
+  width: 350px;
+  height: 35px; 
+  border-radius: 5px; 
+  background-color: rgb(233, 233, 233);  
+  outline: none;
+  border: none;
+}
+.tool{
+  float: right;   
+  margin-left: 30px;
+}
+.fas:hover{
+  color: rgb(250, 120, 142);
+  transition: 0.3s;
+}
+.fab:hover{
+  color: rgb(250, 120, 142);
+  transition: 0.3s;
+}
+
+
+                       /* carousel */
+.carousel-indicators ol{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+                      /* Boxes */
+.product_container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  cursor: pointer;
+
+
+}
+
+.items_img img{ 
+    width: 95%;
+    /* margin-left: 35px;
+    margin-right: 35px; */
+    margin-left: -6px;
+    border-radius: 7px;
+}
+.items_img img:hover{
+    box-shadow: 3px 3px 35px 3px rgb(224, 224, 224);
+    transition: 0.3s;
+}
+.product_container2{
+    display: flex;
+    cursor: pointer;
+}
+.images{
+    /* margin-left: 35px;
+    margin-right: 35px; */
+    border-radius: 7px;
+    /* align-items: center; */
+}
+/* .images img{   
+    width: 100%;   
+} */
+.images:hover{
+    box-shadow: 3px 3px 35px 3px rgb(224, 224, 224);
+    transition: 0.3s;
+}
+h2{
+    margin-left: 35px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.product_container3{
+    display: flex;
+    cursor: pointer;
+}
+.product_container4{
+    display: flex;
+    cursor: pointer;
+}
+
+.disp{
+  display: flex;
+}
+.move{
+  color: hotpink;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  /* border-top: gray solid thin; */
+ text-align: center;
+ font-weight: bolder;
+ border-radius: 5px;
+ cursor: pointer;
+ border: solid black 1px;
+ margin-right:8px;
+ 
+}
+.move:hover
+{
+    color: red;
+    transition: .3s;
+    
+}
+/* Footer */
+
+.options{
+  display: flex;
+  background-color: rgb(240, 239, 239);
+  cursor: pointer;
+}
+li{
+  list-style: none;
+}
+
+.im img{
+  width: 35%;
+  padding: 3px;
+}
+.detail{
+  margin: 50px;
+width: 25%;
+ 
+}
+ul{
+  font-weight: bold;
+margin-left: 5px;
+}
+li{
+  margin-left: 41px;
+}
+.detail .fab{
+  font-size: 25px;
+  margin: 5px;
+}
+.popular{
+  margin: 40px;
+}
+.popular a{
+  font-size: 20px;
+color: gray;
+}
+.popular a:hover{
+  text-decoration: none;
+  color: hotpink;
+  transition: .3s;
+}
+.contact{
+  display: flex;
+  cursor: pointer;
+ 
+}
+.c1{
+  width: 90%;
+  margin: 40px;
+}
+
+.contact .c1 h4{
+  color: blue;
+}
+.c2{
+  float: right;
+  margin: 40px;
+}
+.con{
+  margin-left: 40px;
+}
+
+ /* for  mobile */
+ @media (min-width: 320px) {
+        .options  {
+          display: block;       
+        }
+        .icon4{
+          display: flex;     
+        }
+      }
+      @media (min-width: 992px) {
+        .options  {
+          display: flex;
+        }
+      }
+
+
+/* Checkout */
+.checkout{
+  border-radius: 7px;
+
+  padding: 7px;
+  margin: 11px;
+  margin-top: 20px;
+}
+.move2{
+  background-color: rgb(253, 36, 72);
+  border: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.move2:hover{
+  background-color: rgb(126, 1, 21);
+  transition: 0.3s;
+  color: white; 
+}
+.subtotal{
+  font-size: large;
+  font-weight: bold ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
 }
+
+
+ 
